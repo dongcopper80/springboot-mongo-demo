@@ -1,0 +1,14 @@
+# Disabling Spring Boot AutoConfig
+spring:
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration
+
+mongodb:
+  primary:
+    host: localhost
+    port: 27017
+    database: config
+  secondary:
+    host: localhost
+    port: 27017
+    database: content
